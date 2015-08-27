@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>jQueryの練習</title>
+    <style>
+      .mystyle {
+        border:5px solid green;
+        font-size:48px;
+      }
+    </style>
+</head>
+<body>
+    <p>jQueryの練習</p>
+    <!-- <input type="text" value="hello"> -->
+<!--     <ul id="main">
+      <li>0</li>
+      <li class="item">1</li>
+      <li class="item">2</li>
+      <li>
+          3
+          <ul id="sub">
+            <li>3-0</li>
+            <li>3-1</li>
+            <li class="item">3-2</li>
+            <li class="item">3-3</li>
+            <li>3-4</li>
+          </ul>
+      </li>
+    </ul> -->
+
+    <!--     <p><a href="http://google.com">Google</a></p>
+    <p><a href="http://yahoo.co.jp">Yahoo!</a></p>
+    <p><a href="http://dotinstall.com">dotinstall</a></p> -->
+
+<!--     <div id="box" style="width:100px;height:100px;background:red;"></div> -->
+
+<!--     <input type="text" id="name">
+    <select id="members" name="members">
+        <option>taguchi</option>
+        <option>koji</option>
+        <option>dotinstall</option>
+    </select> -->
+
+    <button>Add!</button>
+
+    <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+    <script>
+      $(function(){
+        // #02
+        // $('p').css('color', 'red');
+        // #03
+        // $(".item").css('color', 'red');
+        // #04
+        // $(".item + .item").css('color', 'red');
+        // #05 フィルタを使ってみよう
+        // $("#sub > li:contains('4')").css('color', 'red');
+        // #06 メソッドを使ったDOM要素
+        // $("#sub > li:eq(2)").siblings().css('color', 'red');
+        // #07 属性セレクタを使ってみよう
+        // $('a[href$="jp"]').css('background', 'red');
+        // #08 css､addClass/removeClassを使おう
+        // $('p').addClass('mystyle');
+        // #09 attr､dataを使ってみよう
+        // $('a').attr('href', 'http://google.co.jp')
+        // #10タグの中身を操作してみよう
+        // $('input').val('hello again')
+        // $('p').remove();
+        // #11 要素を追加してみよう
+        // var li = $('<li>').text('just added')
+        // $('ul > li:eq(1)').before(li);
+        // #12 エフェクトを使ってみよう
+        // $('#box').fadeOut(800, function(){
+        //     alert('gone!');
+        // });
+        // #13 イベントを使ってみよう なんでe入れるの？
+        // $('#box')
+        //   .mouseover(function(){
+        //     $(this).css('background', 'green');
+        //   })
+        //   .mouseout(function(){
+        //     $(this).css('background', 'red');
+        //   })
+        //   .mousemove(function(e){
+        //     $(this).text(e.pageX);
+        //   });
+        // #14 focus､blur､changeを使おう
+        // $('#name')
+        //   .focus(function(){
+        //     $(this).css('background', 'red')
+        //   })
+        //   .blur(function(){
+        //     $(this).css('background', 'white')
+        //   })
+        //   $('#members').change(function(){
+        //     alert('changed!')
+        //   });
+        // #15 onメソッドを使ってみよう
+        // $('button').click(function(){
+        //   var p =$('<p>').text('vanish!').addClass('vanish');
+        //   $(this).before(p);
+        // });
+
+        // $('body').on('click', '.vanish', function(){
+        //   $(this).remove();
+        // });
+        // #16 Ajaxとはなにか？
+        
+      });
+    </script>
+</body>
+</html>
